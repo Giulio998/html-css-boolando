@@ -2,16 +2,26 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
+
+
 ul,
-li {
+li,
+a {
     list-style: none;
+    text-decoration: none;
+    color: white;
 }
 
 .container{
     margin: 0 auto;
     width: 1000px;
+}
+
+.icon{
+    width: 20px;
 }
 
 .navBar li{
@@ -28,39 +38,58 @@ footer li{margin-right: 8px;}
 
 .row{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .navBar{
     height: 80px;
 }
 
-.headerBackground{
-    background-color: orange;
-    width: 100%;
-}
+
 
 header{
     position: fixed;
     z-index: 4;
+    background-color: orange;
+    width: 100%;
+    height: 70px;
 }
+
+header .col-4:last-child{
+    justify-content: flex-end;
+}
+
+.marginLeft{
+    margin-left: 10px;
+}
+
+.marginRight{
+margin-right: 10px;
+}
+
 
 .mainPadding{
     padding-top: 120px;
 }
 
 .col-4{
-    width:calc(100% / 3);
+    width:calc(100% / 3 - 10px);
+
+}
+
+header .col-4 {
+    height: 70px;
 }
 
 .logo{
-    height: 50px;
+    height: 30px;
 }
 
 .card{
     height: 500px;
-    padding: 10px;
+    
 }
 
 .cardHead{
@@ -107,6 +136,20 @@ header{
 
 }
 
+
+
+
+.alignCenter{
+    display: flex;
+    align-items: center;
+}
+
+.flexCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .prodotto{
    
     position: relative;
@@ -121,7 +164,7 @@ header{
 
 .overlay{
     background-size: cover;
-    height: 400px;
+    height: 100%;
     width: 100%;
     opacity: 0%;
     position: absolute;
@@ -205,6 +248,8 @@ header{
     color: white;
 }
 
-.footerH5Padding{
-    padding: 5px;
+
+
+.footerHeight{
+    height: 70px;
 }
