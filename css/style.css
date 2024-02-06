@@ -1,0 +1,210 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.container{
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.navBar li{
+    padding: 6px;
+}
+
+footer li{margin-right: 8px;}
+
+.flexSpace{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navBar{
+    height: 80px;
+}
+
+.headerBackground{
+    background-color: orange;
+    width: 100%;
+}
+
+header{
+    position: fixed;
+    z-index: 4;
+}
+
+.mainPadding{
+    padding-top: 120px;
+}
+
+.col-4{
+    width:calc(100% / 3);
+}
+
+.logo{
+    height: 50px;
+}
+
+.card{
+    height: 500px;
+    padding: 10px;
+}
+
+.cardHead{
+    position: relative;
+    height: 400px;
+}
+
+
+.prezzoScontato{
+    color: red;
+}
+
+.brand{
+    font-size: small;
+}
+
+.badge{
+  
+    padding: 5px 10px 5px 10px;
+    position: absolute;
+    z-index: 3;
+    
+}
+
+.saldo{
+    left: 0px;
+    bottom: 35px;
+    background-color: red;
+    color: white;
+}
+
+.sostenibile{
+    background-color: green;
+    left: 55px;
+    bottom: 35px;
+    color: white;
+}
+
+.preferiti{
+    right: 0px;
+    top: 15px;
+    font-size:large;
+    background-color: white;
+
+}
+
+.prodotto{
+   
+    position: relative;
+}
+
+.picA{
+    background-image: url(../img/1.webp);
+    background-size: cover;
+    height: 100%;
+}
+
+
+.overlay{
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    opacity: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.picA .overlay{
+    background-image: url(../img/1b.webp);
+    z-index: 2;
+}
+
+.card:hover .overlay{
+    opacity: 100%;
+}
+
+.picB{
+    background-image: url(../img/2.webp);
+    background-size: cover;
+    height: 100%;
+}
+
+.picB .overlay{
+    background-image: url(../img/2b.webp);
+    z-index: 2;
+}
+
+.picC{
+    background-image: url(../img/3.webp);
+    background-size: cover;
+    height: 100%;
+}
+
+.picC .overlay{
+    background-image: url(../img/3b.webp);
+    z-index: 2;
+}
+
+.picD{
+    background-image: url(../img/4.webp);
+    background-size: cover;
+    height: 100%;
+}
+
+.picD .overlay{
+    background-image: url(../img/4b.webp);
+    z-index: 2;
+}
+
+.picE{
+    background-image: url(../img/5.webp);
+    background-size: cover;
+    height: 100%;
+}
+
+.picE .overlay{
+    background-image: url(../img/5b.webp);
+    z-index: 2;
+}
+
+.picF{
+    background-image: url(../img/6.webp);
+    background-size: cover;
+    height: 100%;
+}
+
+.picF .overlay{
+    background-image: url(../img/6b.webp);
+    z-index: 2;
+}
+
+.preferiti:hover.preferiti{
+    color: red;
+}
+
+.footerBackground{
+    background-color: black;
+}
+
+.whiteFont{
+    color: white;
+}
+
+.footerH5Padding{
+    padding: 5px;
+}
